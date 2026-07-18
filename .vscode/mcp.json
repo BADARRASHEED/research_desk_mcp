@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "research-desk": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/python.exe",
+      "args": [
+        "${workspaceFolder}/server.py"
+      ],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}
