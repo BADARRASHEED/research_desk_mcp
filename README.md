@@ -39,6 +39,16 @@ flowchart LR
 
 The saved idea remains the source of truth. Its title and tags are converted into a focused arXiv query, while the server applies both remote and local publication-date checks. Every successful search automatically produces a uniquely named Markdown report in the user's Downloads folder. The MCP response also contains structured paper metadata and canonical arXiv links.
 
+## Demo
+
+The demonstration shows the complete literature-discovery workflow using the request:
+
+> Use `find_arxiv_papers` with `idea_id` 1 and `max_results` 10.
+
+Research Desk identifies the saved topic, retrieves ten relevant arXiv papers published in 2025 or later, returns verified abstract and PDF links, and automatically saves the results as a structured Markdown report in the Downloads folder.
+
+[Watch the Research Desk MCP demo](demo/research_desk_mcp.mp4)
+
 ## Core Capabilities
 
 | Capability | Description |
@@ -91,6 +101,8 @@ It also exposes the complete idea collection as a readable MCP resource and incl
 
 ```text
 research_desk_mcp/
+├── demo/
+│   └── research_desk_mcp.mp4
 ├── data/
 │   └── research_ideas.json
 ├── research_desk/
